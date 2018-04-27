@@ -101,8 +101,7 @@
     #if !defined(HMC5883_I2C_BUS)
         #define HMC5883_I2C_BUS MAG_I2C_BUS
     #endif
-    BUSDEV_REGISTER_I2C(busdev_hmc5883,     DEVHW_HMC5883,      HMC5883_I2C_BUS,    0x1E,               NONE,           DEVFLAGS_NONE);
-#endif
+    BUSDEV_REGISTER_I2C(busdev_hmc5883,     DEVHW_HMC5883,      HMC5883_I2C_BUS,    0x1E,               NONE,           DEVFLAGS_NONE);#endif
 
 #if defined(USE_MAG_QMC5883)
     #if !defined(QMC5883_I2C_BUS)
@@ -126,14 +125,14 @@
     #if !defined(MAG3110_I2C_BUS)
         #define MAG3110_I2C_BUS MAG_I2C_BUS
     #endif
-    BUSDEV_REGISTER_I2C(busdev_mag3110,     DEVHW_MAG3110,      MAG3110_I2C_BUS,    0x0E,               NONE,           DEVFLAGS_NONE);
+    BUSDEV_REGISTER_I2C(busdev_mag3110,     DEVHW_MAG3110,      MAG3110_I2C_BUS,    0x0C,               NONE,           DEVFLAGS_NONE);
 #endif
 
 #if defined(USE_MAG_IST8310)
     #if !defined(IST8310_I2C_BUS)
         #define IST8310_I2C_BUS MAG_I2C_BUS
     #endif
-    BUSDEV_REGISTER_I2C(busdev_ist8310,     DEVHW_IST8310,      IST8310_I2C_BUS,    0x0C,               NONE,           DEVFLAGS_NONE);
+    BUSDEV_REGISTER_I2C(busdev_ist8310,     DEVHW_IST8310,      IST8310_I2C_BUS,    0x0E,               NONE,           DEVFLAGS_NONE);
 #endif
 
 #if defined(USE_RANGEFINDER_SRF10)
